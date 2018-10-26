@@ -1,5 +1,18 @@
 function companyBotStrategy(trainingData: number[][]): number {
- 
+    
+    // what is the average when we have time and correctness
+    let time = 0;
+    let correctness = 0;
+
+    // iterate through the training data 
+    trainingData.forEach((data: number[]) => {
+        if (data[1] === 1) {
+            time += data[0];
+            correctness += data[1];
+        }
+    });
+
+    return time / correctness || 0;
 }
 
 console.log(companyBotStrategy([[3, 1], [6, 1], [4, 1], [5, 1]]));

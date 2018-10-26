@@ -12,9 +12,13 @@ function bishopAndPawn(bishop: string, pawn: string): boolean {
     };
 
     const bishopX = board[bishop[0]];
+    console.log(bishopX);
     const bishopY = parseInt(bishop[1]);
+    console.log(bishopY);
     const pawnX = board[pawn[0]];
+    console.log(pawnX);
     const pawnY = parseInt(pawn[1]);
+    console.log(pawnY);
 
     if(bishopX + bishopY === pawnY + pawnX || bishopX + pawnY === pawnX + bishopY) {
         return true;
