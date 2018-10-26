@@ -1,4 +1,6 @@
 function missingLetters(str: string): string {
+
+    return undefined 
    
 }
 console.log(missingLetters("bce"));
