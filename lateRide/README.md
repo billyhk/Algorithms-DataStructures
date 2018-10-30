@@ -27,6 +27,7 @@ lateRide(n) = 14.
 -   parseInt()
 -   reduce()
 -   map()   
+-   math.floor()
 
 **Input/Output**
 
